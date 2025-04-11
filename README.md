@@ -9,15 +9,27 @@ This project uses machine learning models (Random Forest and Support Vector Regr
 
 ## 📂 Dataset
 
-The dataset includes:
+**Descrption :**  The dataset includes: The dataset used in this project contains traffic-related information collected over multiple zones and days. It includes 1439 rows and 7 columns, each representing different attributes that could affect traffic levels.
 
-- `Day`: Name of the day (e.g., Monday, Tuesday, etc.)
-- `Date`: Encoded date
-- `CodedDay`: Numeric representation of the day
-- `Zone`: City zone identifier
-- `Weather`: Weather condition index
-- `Temperature`: Temperature value
-- `Traffic`: Traffic level (target variable)
+
+- `Day`: Day of the week (e.g., Monday, Tuesday).
+- `Date`: Encoded version of the calendar date.
+- `CodedDay`: Numerical representation of the day (e.g., Monday = 1, Tuesday = 2, etc.).
+- `Zone`: Identifier for specific city zones (numerical).
+- `Weather`: Numerical value representing weather conditions.
+- `Temperature`: Recorded temperature (in °C) on that date in the zone.
+- `Traffic`: Target variable – represents traffic level (on a scale or count).
+
+---
+## 🧠 Key Points:
+
+- The dataset captures the multifactor influence on traffic, such as:
+- Which day of the week it is (weekdays vs. weekends).
+- Weather conditions (e.g., rain might increase or decrease traffic).
+- Temperature (extreme heat/cold might reduce traffic).
+- Zone differences (some areas are naturally busier).
+- The dataset is clean (no missing values).
+- Categorical columns like Day and Date are encoded before modeling.
 
 ---
 
